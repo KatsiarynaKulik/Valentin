@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Valentin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Радуюсь каждому нашему дню" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czt-ec-qnk">
+                                <rect key="frame" x="26.666666666666657" y="124" width="361" height="33"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбери дату нашей встречи:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWU-06-xrs">
+                                <rect key="frame" x="84.666666666666686" y="187" width="245" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="BEa-Za-s5q">
+                                <rect key="frame" x="47" y="239" width="320" height="216"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="cxN-vR-bUM"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkm-8E-VJS">
+                                <rect key="frame" x="147" y="475" width="120" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="G30-k1-rI5"/>
+                                    <constraint firstAttribute="height" constant="50" id="h9c-3h-U1F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Результат">
+                                    <color key="titleColor" red="1" green="0.53815747390000002" blue="0.66230171260000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resultButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hkd-V8-8VY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Я наслаждаюсь тобой уже ... дней" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dad-fe-RIp">
+                                <rect key="frame" x="74" y="545" width="266" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.53815747390000002" blue="0.66230171260000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dad-fe-RIp" firstAttribute="top" secondItem="mkm-8E-VJS" secondAttribute="bottom" constant="20" id="39S-kQ-foe"/>
+                            <constraint firstItem="OWU-06-xrs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BGR-yO-CPe"/>
+                            <constraint firstItem="Czt-ec-qnk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="BgB-jn-VBh"/>
+                            <constraint firstItem="BEa-Za-s5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HI7-4j-kIj"/>
+                            <constraint firstItem="dad-fe-RIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="HxF-Tw-JGG"/>
+                            <constraint firstItem="mkm-8E-VJS" firstAttribute="top" secondItem="BEa-Za-s5q" secondAttribute="bottom" constant="20" id="MHd-gI-aCN"/>
+                            <constraint firstItem="mkm-8E-VJS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rg1-oN-miN"/>
+                            <constraint firstItem="BEa-Za-s5q" firstAttribute="top" secondItem="OWU-06-xrs" secondAttribute="bottom" constant="30" id="VDE-Pi-WT0"/>
+                            <constraint firstItem="Czt-ec-qnk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XaF-wq-kWZ"/>
+                            <constraint firstItem="OWU-06-xrs" firstAttribute="top" secondItem="Czt-ec-qnk" secondAttribute="bottom" constant="30" id="une-Ft-CDO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dad-fe-RIp" secondAttribute="trailing" constant="74" id="xyQ-vg-2l4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="dad-fe-RIp" id="hub-JC-4kz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
