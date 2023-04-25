@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Valentin
 //
-//  Created by Екатерина  on 13.02.23.
+//  Created by Karsiaryna Kulik on 13.02.23.
 //
 
 import UIKit
