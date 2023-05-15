@@ -2,9 +2,9 @@
 //  SceneDelegate.swift
 //  Valentin
 //
-//  Created by Karsiaryna Kulik on 13.02.23.
+//  Created by Katsiaryna Kulik  on 13.02.23.
+//  Copyright © 2023 Katsiaryna Kulik. All rights reserved.
 //
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
